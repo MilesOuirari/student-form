@@ -97,7 +97,7 @@
         <input type="email" name="email" required>
       </div>
       <div class="form-group">
-        <label>Phone (WhatsApp)</label>
+        <label>Phone with key of the country (WhatsApp)</label>
         <input type="text" name="phone" required>
       </div>
       <div class="form-group">
@@ -126,20 +126,24 @@
         <input type="text" name="gpa">
       </div>
       <div class="form-group">
-        <label>English Score (IELTS/TOEFL)</label>
-        <input type="text" name="english_score">
+        <label>Language(s) Learned & Level</label>
+        <input type="text" name="languages" placeholder="e.g. English – B2, French – A2">
       </div>
-      <div class="form-group">
-        <label>Preferred Country</label>
-        <select name="country">
-          <option>USA</option>
-          <option>Canada</option>
-          <option>UK</option>
-          <option>Germany</option>
-          <option>Australia</option>
-          <option>Turkey</option>
-        </select>
+
+      <div class="form-full">
+        <label>Preferred Specialities (Ranked)</label>
+        <input type="text" name="speciality_1" placeholder="1st Choice" required>
+        <input type="text" name="speciality_2" placeholder="2nd Choice">
+        <input type="text" name="speciality_3" placeholder="3rd Choice">
       </div>
+
+      <div class="form-full">
+            <label>preferred_countries (Ranked)</label>
+            <input type="text" name="Country 1" placeholder="1st Choice" required>
+            <input type="text" name="Country 2" placeholder="2nd Choice">
+            <input type="text" name="Country 3" placeholder="3rd Choice">
+      </div>
+
       <div class="form-group">
         <label>Program Level</label>
         <select name="program">
@@ -149,14 +153,17 @@
           <option>PhD</option>
         </select>
       </div>
+
       <div class="form-group">
         <label>Intended Start Date</label>
-        <input type="text" name="start_date">
+        <input type="text" name="start_date" placeholder="e.g. Fall 2025">
       </div>
+
       <div class="form-full">
         <label>Additional Notes</label>
         <textarea name="notes" rows="4"></textarea>
       </div>
+
       <div class="form-full">
         <button type="submit">Submit Application</button>
       </div>
